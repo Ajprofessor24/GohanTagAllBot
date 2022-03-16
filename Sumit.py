@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 📌𝐆𝐨𝐡𝐚𝐧 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐒𝐮𝐦𝐢𝐭𝐘𝐚𝐝𝐚𝐯](https://t.me/Simple_Mundaa) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 📌𝐀𝐉𝐄𝐄𝐓 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://t.me/papa_bol_sakteho) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
       [
-        Button.url('𝐒𝐮𝐩𝐩𝐨𝐫𝐭', 'https://t.me/World_FriendShip_Zone'),
-        Button.url('𝐔𝐩𝐝𝐚𝐭𝐞', 'https://t.me/The_Superiour_Network')
+        Button.url('𝐒𝐮𝐩𝐩𝐨𝐫𝐭', 'https://t.me/TPN_chatroom'),
+        Button.url('𝐔𝐩𝐝𝐚𝐭𝐞', 'https://t.me/The_Professor_Network')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of 📌𝐆𝐨𝐡𝐚𝐧 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐒𝐮𝐦𝐢𝐭𝐘𝐚𝐝𝐚𝐯](https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of 📌🇦𝐣𝐞𝐞𝐭 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://t.me/Papa_bol_sakteho) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('𝐒𝐮𝐩𝐩𝐨𝐫𝐭', 'https://t.me/World_FriendShip_Zone'),
-        Button.url('𝐔𝐩𝐝𝐚𝐭𝐞', 'https://t.me/The_Superiour_Network')
+        Button.url('𝐒𝐮𝐩𝐩𝐨𝐫𝐭', 'https://t.me/TPN_chatroom'),
+        Button.url('𝐔𝐩𝐝𝐚𝐭𝐞', 'https://t.me/The_Professor_Network')
       ]
     )
   )
@@ -119,5 +119,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> 📌𝐆𝐨𝐡𝐚𝐧 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭 <<")
+print(">> 📌🄰🄹🄴🄴🅃 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭 <<")
 client.run_until_disconnected()
