@@ -21,7 +21,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 📌𝐀𝐉𝐄𝐄𝐓 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://t.me/papa_bol_sakteho) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 📌𝐀𝐉𝐄𝐄𝐓 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://t.me/papa_bol_sakteho) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦 ",
     link_preview=False,
     buttons=(
       [
@@ -49,7 +49,7 @@ async def help(event):
 async def all(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command Can Be Use In Groups And Channels @World_FriendShip_Zone !__")
+    return await event.respond("__This command Can Be Use In Groups And Channels @TPN_chatroom !__")
   
   is_admin = False
   try:
@@ -71,7 +71,7 @@ async def all(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @The_Superiour_Network !__")
+    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @The_Professor_Network !__")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("__Give me one argument!__")
@@ -84,7 +84,7 @@ async def all(event):
     if msg == None:
         return await event.respond("__I Can't Mention Members For Older Messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY  [𝐒𝐮𝐦𝐢𝐭𝐘𝐚𝐝𝐚𝐯](https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw) !__")
+    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY  [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://instagram.com/ajeet_gond_24?utm_medium=copy_link) !__")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -96,7 +96,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY  [𝐒𝐮𝐦𝐢𝐭𝐘𝐚𝐝𝐚𝐯](https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw)"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade bY  [𝐀𝐣𝐞𝐞𝐭𝐆𝐨𝐧𝐝](https://instagram.com/ajeet_gond_24?utm_medium=copy_link)"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -119,5 +119,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> 📌🄰🄹🄴🄴🅃 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭 <<")
+print(">> 📌🄰🄹🄴🄴🅃 🆃🅰🅶 🄱🄾🅃 <<")
 client.run_until_disconnected()
